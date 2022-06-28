@@ -1,13 +1,8 @@
 const express = require('express')
 const userRouter = require('./routes/user.routes')
 const postRouter = require('./routes/post.routes')
-const cors = require("cors");
 
 const PORT = process.env.PORT || 8080
-
-var corsOptions = {
-  origin: "*"
-};
 
 app.use(cors(corsOptions));
 
